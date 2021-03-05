@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="menu" id="menu">
+            <img src="img/descargar.png" alt="ChatBot" class="menu__logo">
+            <div class="menu__nav">
+                <p>Menu</p>
+            </div>
+            <div class="menu__perfil">
+                <button class="menu__perfil-btn">
+                    <i class="fad fa-user"></i>
+                    <i class="fad fa-chevron-circle-down"></i>
+                </button>
+                <div class="menu__perfil-info">
+                    <i class="fad fa-info-circle"></i>
+                    <p>El bot generará automaticamente un usuario.</p>
+                </div>
+                <div class="menu__perfil-contenido perfil-menu"> <!-- perfil-visible -->
+                    <div class="perfil__datos">
+                        <img src="img/descargar.png" alt="Avatar" class="perfil__datos-avatar">
+                        <p class="perfil__datos-usuario">
+                            <b>Hola, </b>
+                            <span id="perfil__datos-usuario"></span>
+                        </p>
+                    </div>
+                    <div class="perfil__opciones">
+                        <button class="perfil__opciones-login">
+                            <i class="fad fa-house-signal"></i>
+                            <span> Nuevo perfil</span>
+                        </button>
+                        <button class="perfil__opciones-info">
+                            <i class="fad fa-info-circle"></i>
+                            <span> Info</span>
+                        </button>
+                        <div>
+                            <i class="fad fa-info-circle"></i>
+                            <p>
+                                <p>
+                                    <b>
+                                        <i class="fad fa-house-signal"></i>
+                                        <span> Nuevo perfil</span>
+                                    </b>
+                                    <span>Vuelve a crear una conversación</span>
+                                </p>
+                                <p>
+                                    <b>
+                                        <i class="fad fa-info-circle"></i>
+                                        <span> Info</span>
+                                    </b>
+                                    <span>Aparece esta ventana</span>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="perfil__sistema">
+                        <p class="perfil__sistema-id">
+                            <i class="fad fa-server"></i>
+                            <span> ID: </span>
+                            <span id="perfil__sistema-id"></span>
+                        </p>
+                        <p class="perfil__sistema-version">
+                            <i class="fad fa-code-branch"></i>
+                            <span> Version: </span>
+                            <span id="perfil__sistema-version"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app" id="app">
+            <div class="app" id="app">
+                <div class="contactos">
+                    <div class="contactos__buscar">
+                        <input type="text" class="contactos__buscar-input" placeholder="Buscar chat..."></input>
+                        <button class="contactos__buscar-boton">Buscar</button>
+                        <div class="contactos__buscar-resultados">
+                            <div class="contactos__buscar-placeholder">Escribe para buscar</div>
+                        </div>
+                    </div>
+                    <div class="contactos__lista">
+                        <p>Mensajes</p>
+                    </div>
+                    <div class="contactos__agregar">
+                        <p>+</p>
+                        <p>Añadir contacto</p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__datos">
+                    </div>
+                    <div class="chat__mensajes">
+                        <div id="output" class="output">
+                            <div class="output__sistema msg">
+                                <p class="output__sistema-txt">
+                                    <span>Este es el inicio del Chat con ChatBot</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__opciones">
+                        <div class="chat__opciones-estado"></div>
+                        <div class="chat__opciones-configurar"></div>
+                        <!-- <input type="text" id="username" placeholder="usr"> -->
+                    </div>
+                    <div class="chat__enviar">
+                        <input type="text" class="chat__enviar-input" id="message" placeholder="Escribe aquí el mensaje..."></input>
+                        <button class="chat__enviar-boton" id="send">
+                            <i class="fad fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="opciones">
+                    <div class="opciones__general">
+                        <i class="fad fa-globe-europe"></i>
+                        <p>
+                            <span>Conectado a </span>
+                            <b>
+                                <span id="opciones__general-servidor">
+                                    <i class="fad fa-router"></i>
+                                    <span> Conectando...</span>
+                                </span>
+                            </b>
+                        </p>
+                        <button onclick="alert('Hola :) este era un secreto del codigo')"></button>
+                    </div>
+                    <div class="opciones__personal">
+                        <div class="opciones__personal-menu apps">
+                            <div class="apps__info">
+                                <h2 class="apps__info-titulo">
+                                    <span class="apps__info-titulo-1">Jue</span>
+                                    <span class="apps__info-titulo-2">gos</span>
+                                </h2>
+                            </div>
+                            <div class="apps__lista">
+                                <div class="apps__lista-mundo" id="juego___mundo">
+                                    <span>
+                                        <i class="fal fa-globe"></i>
+                                    </span>
+                                    <p>Mi Mundo</p>
+                                </div>
+                                <div class="apps__lista-4enraya" id="juego___4enraya">
+                                    <span>
+                                        <i class="fad fa-browser"></i>
+                                    </span>
+                                    <p>4 En raya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="juegos" id="juegos">
+                <div class="juegos__cerrar" id="juegos___cerrar">
+                    <i class="fad fa-times-circle"></i>
+                </div>
+                <div class="juegos__contenido">
+                    <div class="juegos__info">
+                        <div class="juegos__info-descripcion">
+                            <h1 class="juegos__info-descripcion-titulo" id="juegos__info-descripcion-titulo">Titulo</h1>
+                            <p class="juegos__info-descripcion-texto" id="juegos__info-descripcion-texto">Descripcion</p>
+                        </div>
+                        <div class="juegos__info-puntos" id="juegos__info-puntos">
+                            <p class="juegos__info-puntos-jugador"><b>Jugador: </b><span class="puntos-jug" id="puntos-jug">0</span>!</p>
+                            <p class="juegos__info-puntos-ia"><b>IA: </b><span class="puntos-ia" id="puntos-ia">0</span>!</p>
+                        </div>
+                        <div class="juegos__info-ganador-texto">
+                            <p class="juegos__info-ganador-msg" id="pGanador">
+                                <span class="juegos__info-ganador-texto" id="spanResultado"></span>
+                                <button class="juegos__info-ganador-boton" id="btnSiguiente">Boton juego</button>
+                            </p>
+                        </div>
+                    </div>
+                    <svg class="area-juegos" id="area-juegos"></svg>
+                </div>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://rawgit2.com/icodeforlove/template-colors-web/master/dist-browser/template-colors.js"></script>
+    <script src="js/lib/fontawesome.js"></script>
+    <script src="js/lib/config_libs.js"></script>
+    <script src="socket.io/socket.io.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Fin de los scripts -->
+</body>
+</html>

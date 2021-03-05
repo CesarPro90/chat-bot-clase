@@ -1,0 +1,34 @@
+{
+    "server": {
+        "altport": 3000,
+        "public": "public"
+    },
+    "mongodb": {
+        "credentials": {
+            "encrypted": "ROT47"
+        },
+        "config": {
+            "location": "credentials.json",
+            "active": true
+        }
+    },
+    "extensions": {
+        "discord": {
+            "config": {
+                "location": "config.json",
+                "active": true
+            },
+            "token": {
+                "encrypted": "ROT47"
+            }
+        },
+        "telegram": {
+            "config": {
+                "active": true
+            }
+        }
+    },
+    "main": {
+        "active": true
+    }
+}
