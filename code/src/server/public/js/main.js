@@ -54,8 +54,8 @@ function web() {
                 });
                 $(function() {
                     /*
-                     * Aqui empieza el codigo despues de varios geroglificos ilegibles
-                     * No pongo mas comentarios porque ya ni entiendo lo que escribo
+                     * Aqui empieza el codigo del chatbot
+                     * Lo otro solo conectaba el servidor
                      */
                     socket.on('prueba', (data) => {
                         console.log(c`Mensaje del servidor: ${data}.bold.green`.underline.red);
